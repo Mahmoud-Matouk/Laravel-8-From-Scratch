@@ -5,7 +5,7 @@
         </h1>
 
         <p>
-            By <a href="/categories/{{ $post->category->user }}"> {{ $post->category->slug }} </a> in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
+            By <a href="/posts/{{ $post->category->slug }}"> {{ $post->user->name }} </a> in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
         </p>
 
         <div>
