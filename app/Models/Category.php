@@ -9,6 +9,11 @@ class Category extends Model
 {
     use HasFactory;
 
+    // TODO do this in php artisan tinker
+    /*
+        Category::create(['name' => 'My First Post', 'slug' => 'My-First-Post']);
+    */
+
     // TODO Relationships : hasOne - hasMany - belongsTo - belongsToMany
     public function posts()
     {

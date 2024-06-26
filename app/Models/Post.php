@@ -18,7 +18,6 @@ class Post extends Model
     // TODO do this in php artisan tinker
     /*
         Post::create(['category_id' => '3', 'slug' => 'My-Third-Post', 'title' => 'My Third Post', 'excerpt' => 'My Third Post excerpt', 'body' => 'My Third Post body']);
-        Category::create(['name' => 'My First Post', 'slug' => 'My-First-Post']);
     */
 
     // TODO Pass the url by it's slug
@@ -31,6 +30,11 @@ class Post extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 
 }

@@ -8,7 +8,7 @@
             </h1>
 
             <p>
-                By <a href="#" > Matouk </a> in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
+                By <a href="/categories/{{ $post->category->slug }}"> {{ $post->user->name }} </a> in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
             </p>
 
             <div>
