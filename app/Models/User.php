@@ -44,10 +44,9 @@ class User extends Authenticatable
     ];
 
     // TODO Relationships : hasOne - hasMany - belongsTo - belongsToMany
-    public function posts()
+    public function posts(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Post::class);
     }
-
 
 }
