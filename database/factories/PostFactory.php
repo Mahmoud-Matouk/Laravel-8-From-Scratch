@@ -24,9 +24,9 @@ class PostFactory extends Factory
             'user_id' => User::factory(),
             'category_id' => Category::factory(),
             'title' => fake()->sentence(),
-            'excerpt' => fake()->sentence(),
-            'body' => fake()->paragraph(),
             'slug' => fake()->slug(),
+            'excerpt' => '<p>' . implode('</p><p>', fake()->paragraphs(2)) . '</p>>' ,
+            'body' => '<p>' . implode('</p><p>', fake()->paragraphs(6)) . '</p>>' ,
         ];
     }
 }
